@@ -24,7 +24,9 @@ pipeline {
         sleep 10
       }
     }
-    post {
+  }
+}
+ post {
         always {
             echo "Always display this message "
         }
@@ -37,6 +39,4 @@ pipeline {
         unstable {
             echo "The job is unstable "
         }
-    }
-  }
-}
+ }
